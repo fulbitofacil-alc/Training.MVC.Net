@@ -13,6 +13,13 @@ namespace MVC5Course.Views.Controllers
             return View(albums);
         }
 
+       public ActionResult WeaklyTypedAlbum()
+       {
+           var album = PinkFloydAlbum();
+           ViewBag.Album = album;
+           return View();
+       }
+
         private Album PinkFloydAlbum()
         {
             var album = new Album

@@ -1,0 +1,17 @@
+@using MVC5Course.Views.Models;
+
+<h2>@ViewBag.Album.BandName - @ViewBag.Album.Title, Publicado el @ViewBag.Album.Released.ToString("dd 'de' MMMM, yyyy")</h2>
+
+<ul>
+    @foreach (AlbumSong p in (ViewBag.Album.Songs as IEnumerable<AlbumSong>))
+    {
+        <li>@p.Title</li>
+    }
+</ul>
+
+<ul>
+    @foreach (dynamic p in ViewBag.Album.Songs)
+    {
+        <li>@p.Title</li>
+    }
+</ul>
