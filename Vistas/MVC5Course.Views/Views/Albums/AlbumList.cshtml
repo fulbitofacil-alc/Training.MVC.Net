@@ -1,0 +1,23 @@
+﻿@model MVC5Course.Views.Models.Album
+
+
+<h2>@Model.BandName - @Model.Title, Publicado el @Model.Released.ToString("dd 'de' MMMM, yyyy")</h2>
+<table class="table">
+    <tr>
+        <th>Pista</th>
+        <th>
+            Cancion
+        </th>
+
+    </tr>
+    @foreach (var item in Model.Songs)
+    {
+        <tr>
+            <td>@item.Track</td>
+
+        <td>
+            @item.Title
+        </td>
+    </tr>
+    }
+</table>
