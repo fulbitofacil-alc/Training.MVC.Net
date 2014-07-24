@@ -1,4 +1,4 @@
-﻿namespace MVC5Course.Views.Models
+﻿namespace MVC5Course.Models
 {
     public class Beer
     {
