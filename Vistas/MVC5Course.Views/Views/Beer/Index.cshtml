@@ -1,4 +1,5 @@
-﻿@model MVC5Course.Models.Beer
+﻿
+@model MVC5Course.Models.Beer
 @{
 
     ViewBag.Title = "Index";
@@ -9,7 +10,11 @@
 @using (Html.BeginForm("Index","Beer",FormMethod.Post))
 {
     @Html.LabelFor(m=>m.Category,new {@class= "control-label"})
-    @Html.TextBoxFor(m => m.Category, new { id = "beerCategory", @class = "form-control", placeholder = "Categoria" })
+    @Html.TextBoxFor(m => m.Category, 
+           new { id = "beerCategory", 
+               @class = "form-control", placeholder = "Categoria" })
     @Html.LabelFor(m => m.Name, new { @class = "control-label" })
-    @Html.TextBoxFor(m => m.Name, new { id = "beerName", @class = "form-control", placeholder = "Nombre" })
+    @Html.TextBoxFor(m => m.Name, 
+           new { id = "beerName", @class = "form-control", 
+               placeholder = "Nombre" })
 }
