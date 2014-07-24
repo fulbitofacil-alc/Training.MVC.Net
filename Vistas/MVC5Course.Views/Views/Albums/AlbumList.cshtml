@@ -1,33 +1,12 @@
 ﻿@using MVC5Course.Views.Models
 @model MVC5Course.Views.Models.Album
 
-@helper ListAlbumSong(AlbumSong song)
-{
-    <tr>
-        <td>@song.Track</td>
-        <td>
-            @song.Title
-        </td>
-    </tr>
-}
+
 
 <h2>@Model.BandName - @Model.Title, Publicado el @Model.Released.ToString("dd 'de' MMMM, yyyy")</h2>
-<table class="table">
-    <tr>
-        <th>Pista</th>
-        <th>
-            Cancion
-        </th>
 
-    </tr>
-    @foreach (var item in Model.Songs)
-    {
-        @ListAlbumSong(item)    
-    }
-</table>
+@{
+    Html.RenderPartial("Shared/_AlbumSongTable",@Model.Songs);
+}
 
-<div>
-    <p>Autor: Uzi Mamani Fernández</p>
-    <p>Email: uzi.mamani@gmail.com</p>
-    <p>Twiter: @@uzigula</p>
-</div>
+

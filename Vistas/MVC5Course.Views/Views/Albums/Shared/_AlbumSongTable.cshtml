@@ -1,0 +1,22 @@
+﻿@using MVC5Course.Views.Models
+@model IEnumerable<AlbumSong>
+@helper ListAlbumSong(AlbumSong song)
+{
+    <tr>
+        <td>@song.Track</td>
+        <td>
+            @song.Title
+        </td>
+    </tr>
+}
+
+<table class="table">
+    <tr>
+        <th>Pista</th>
+        <th>Cancion</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        @ListAlbumSong(item)
+    }
+</table>
