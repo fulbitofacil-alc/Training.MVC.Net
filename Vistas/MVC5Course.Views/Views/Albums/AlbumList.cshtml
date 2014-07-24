@@ -1,5 +1,15 @@
-﻿@model MVC5Course.Views.Models.Album
+﻿@using MVC5Course.Views.Models
+@model MVC5Course.Views.Models.Album
 
+@helper ListAlbumSong(AlbumSong song)
+{
+    <tr>
+        <td>@song.Track</td>
+        <td>
+            @song.Title
+        </td>
+    </tr>
+}
 
 <h2>@Model.BandName - @Model.Title, Publicado el @Model.Released.ToString("dd 'de' MMMM, yyyy")</h2>
 <table class="table">
@@ -12,12 +22,6 @@
     </tr>
     @foreach (var item in Model.Songs)
     {
-        <tr>
-            <td>@item.Track</td>
-
-        <td>
-            @item.Title
-        </td>
-    </tr>
+        @ListAlbumSong(item)    
     }
 </table>
