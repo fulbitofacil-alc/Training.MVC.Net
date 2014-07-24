@@ -1,0 +1,22 @@
+﻿@model MVC5Course.Views.Models.Beer
+@{
+
+    ViewBag.Title = "Index";
+
+    var nameValue = Model != null ? Model.Name : null;
+
+    var categoryValue = Model != null ? Model.Category : null;
+
+}
+
+<h2>Da de alta una cerveza:</h2>
+
+<form method="POST">
+    Nombre:
+    <input type="text" name="Name" value="@nameValue" />
+    <br />
+    Categoría:
+    <input type="text" name="Category" value="@categoryValue" />
+    <br />
+    <input type="submit" value="Enviar!" />
+</form>
