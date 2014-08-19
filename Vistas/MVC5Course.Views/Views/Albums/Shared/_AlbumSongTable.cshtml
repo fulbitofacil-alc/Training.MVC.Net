@@ -1,14 +1,5 @@
 ﻿@using MVC5Course.Views.Models
 @model IEnumerable<AlbumSong>
-@helper ListAlbumSong(AlbumSong song)
-{
-    <tr>
-        <td>@song.Track</td>
-        <td>
-            @song.Title
-        </td>
-    </tr>
-}
 
 <table class="table">
     <tr>
@@ -17,6 +8,6 @@
     </tr>
     @foreach (var item in Model)
     {
-        @ListAlbumSong(item)
+        @AlbumHelpers.ListAlbumSong(item)
     }
 </table>
