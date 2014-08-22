@@ -1,9 +1,9 @@
 ﻿@using System.Web.WebPages.Html
 @using MVC5Course.Views.Models
-@helper ListAlbumSong(HtmlHelper helper, AlbumSong song)
+@helper ListAlbumSong(AlbumSong song)
 {
     <tr>
-        <td> @helper.TextBox("",song.Track)</td>
+        <td> @song.Track</td>
         <td>
             @song.Title
         </td>
