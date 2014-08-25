@@ -5,11 +5,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.OData;
+using MVC5Course.WebApi.Filters;
 using MVC5Course.WebApi.Models;
 using MVC5Course.WebApi.RequestFilters;
 
 namespace MVC5Course.WebApi.Controllers
 {
+
     public class EmployeesController : ApiController
     {
         private static IList<Employee> list = new List<Employee>()
@@ -19,7 +21,7 @@ namespace MVC5Course.WebApi.Controllers
                 Id = 12345,
                 FirstName = "Koopa",
                 LastName = "Cunza",
-                Department = 2,
+                Department = new List<int>{1,2},
                 Office = "Lima"
             },
             new Employee
@@ -27,7 +29,7 @@ namespace MVC5Course.WebApi.Controllers
                 Id = 12346,
                 FirstName = "Ariel",
                 LastName = "Cabrera",
-                Department = 3,
+                Department = new List<int>{1,2},
                 Office = "Mendoza"
             },
             new Employee
@@ -35,12 +37,11 @@ namespace MVC5Course.WebApi.Controllers
                 Id = 12347,
                 FirstName = "Ronaldinho",
                 LastName = "Gaucho",
-                Department = 2,
+                Department =new List<int>{1,2},
                 Office = "Lima"
             }
 
         };
-
         public IEnumerable<Employee> Get()
         {
             return list;
@@ -54,13 +55,14 @@ namespace MVC5Course.WebApi.Controllers
 
         public IEnumerable<Employee> GetByOffice(string office)
         {
+            if (office == "all") return Get();
             var employees = list.Where(e => e.Office == office).ToList();
             if (!employees.Any()) throw new HttpResponseException(HttpStatusCode.NotFound);
             return employees;
         }
-
         public Employee GetByOffice(string office, int id)
         {
+
             var employees = list.SingleOrDefault(e => e.Office == office && e.Id == id);
             if (employees == null) throw new HttpResponseException(HttpStatusCode.NotFound);
             return employees;
@@ -78,9 +80,10 @@ namespace MVC5Course.WebApi.Controllers
         //    if (!employees.Any()) throw new HttpResponseException(HttpStatusCode.NotFound);
         //    return employees;
         //}
-
         public HttpResponseMessage Post(Employee employee)
         {
+            //if (!ModelState.IsValid) return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+            
             var newId = list.Max(x => x.Id) + 1;
             employee.Id = newId;
             list.Add(employee);
