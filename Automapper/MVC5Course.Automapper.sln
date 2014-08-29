@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5Course.Automapper", "MVC5Course.Automapper\MVC5Course.Automapper.csproj", "{459CFE96-4BB9-4FA3-AA18-4610317B27C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5Course.Automapper.Domain", "MVC5Course.Automapper.Domain\MVC5Course.Automapper.Domain.csproj", "{FCECD732-1E11-4BB4-B873-E03CA78DDABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{459CFE96-4BB9-4FA3-AA18-4610317B27C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459CFE96-4BB9-4FA3-AA18-4610317B27C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459CFE96-4BB9-4FA3-AA18-4610317B27C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459CFE96-4BB9-4FA3-AA18-4610317B27C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCECD732-1E11-4BB4-B873-E03CA78DDABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCECD732-1E11-4BB4-B873-E03CA78DDABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCECD732-1E11-4BB4-B873-E03CA78DDABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCECD732-1E11-4BB4-B873-E03CA78DDABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
