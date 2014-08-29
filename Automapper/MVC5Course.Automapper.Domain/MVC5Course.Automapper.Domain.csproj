@@ -47,6 +47,30 @@
     <Compile Include="BasicDomainExample\Order.cs" />
     <Compile Include="BasicDomainExample\OrderLineItem.cs" />
     <Compile Include="BasicDomainExample\Product.cs" />
+    <Compile Include="ComplexDomainExample\Additional.cs" />
+    <Compile Include="ComplexDomainExample\Base\Entity.cs" />
+    <Compile Include="ComplexDomainExample\Booking.cs" />
+    <Compile Include="ComplexDomainExample\BookingDetail.cs" />
+    <Compile Include="ComplexDomainExample\Branch.cs" />
+    <Compile Include="ComplexDomainExample\Client.cs" />
+    <Compile Include="ComplexDomainExample\Components\Location.cs" />
+    <Compile Include="ComplexDomainExample\Components\Person.cs" />
+    <Compile Include="ComplexDomainExample\Enums\DocumentTypeEnum.cs" />
+    <Compile Include="ComplexDomainExample\Enums\OfficeSizeEnum.cs" />
+    <Compile Include="ComplexDomainExample\Enums\RatingEnum.cs" />
+    <Compile Include="ComplexDomainExample\Equipment.cs" />
+    <Compile Include="ComplexDomainExample\EquipmentByBranch.cs" />
+    <Compile Include="ComplexDomainExample\Office.cs" />
+    <Compile Include="ComplexDomainExample\OfficeBooking.cs" />
+    <Compile Include="ComplexDomainExample\OfficeByBranch.cs" />
+    <Compile Include="ComplexDomainExample\RateDetail.cs" />
+    <Compile Include="ComplexDomainExample\RateHeader.cs" />
+    <Compile Include="ComplexDomainExample\Resource.cs" />
+    <Compile Include="ComplexDomainExample\ResourceDetail.cs" />
+    <Compile Include="ComplexDomainExample\Service.cs" />
+    <Compile Include="ComplexDomainExample\Settings.cs" />
+    <Compile Include="ComplexDomainExample\Suscription.cs" />
+    <Compile Include="ComplexDomainExample\SuscriptionDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
