@@ -47,6 +47,7 @@
     <Compile Include="BasicDomainExample\Order.cs" />
     <Compile Include="BasicDomainExample\OrderLineItem.cs" />
     <Compile Include="BasicDomainExample\Product.cs" />
+    <Compile Include="ProfilesDomain\ProfilesDomain.cs" />
     <Compile Include="ComplexDomainExample\Additional.cs" />
     <Compile Include="ComplexDomainExample\Base\Entity.cs" />
     <Compile Include="ComplexDomainExample\Booking.cs" />

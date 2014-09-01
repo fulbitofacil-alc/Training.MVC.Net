@@ -171,6 +171,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mapper\CustomerMapper.cs" />
+    <Compile Include="Mapper\MapperProfiles.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Basic\CarInfoViewModel.cs" />
     <Compile Include="Models\Basic\CustomerInfoViewModel.cs" />
@@ -178,6 +179,7 @@
     <Compile Include="Models\Basic\EmployeeStatsViewModel.cs" />
     <Compile Include="Models\Basic\EngineInfoViewModel.cs" />
     <Compile Include="Models\Basic\OrderSummaryViewModel.cs" />
+    <Compile Include="Models\Basic\ProfilesViewModels.cs" />
     <Compile Include="Models\Complex\AdditionalDTO.cs" />
     <Compile Include="Models\Complex\AvailableOfficesDTO.cs" />
     <Compile Include="Models\Complex\BalanceDTO.cs" />
