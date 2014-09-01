@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5Course.Automapper", "MV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5Course.Automapper.Domain", "MVC5Course.Automapper.Domain\MVC5Course.Automapper.Domain.csproj", "{FCECD732-1E11-4BB4-B873-E03CA78DDABB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject5", "UnitTestProject5\UnitTestProject5.csproj", "{D3F5D53C-6F5B-45CB-9343-036EB908C8B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FCECD732-1E11-4BB4-B873-E03CA78DDABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCECD732-1E11-4BB4-B873-E03CA78DDABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCECD732-1E11-4BB4-B873-E03CA78DDABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F5D53C-6F5B-45CB-9343-036EB908C8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F5D53C-6F5B-45CB-9343-036EB908C8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F5D53C-6F5B-45CB-9343-036EB908C8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F5D53C-6F5B-45CB-9343-036EB908C8B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

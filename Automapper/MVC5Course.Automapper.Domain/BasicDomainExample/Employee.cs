@@ -12,7 +12,7 @@ namespace MVC5Course.Automapper.Domain.BasicDomainExample
         public int Age { get; set; }
         public DateTime HireDate { get; set; }
         public DateTime DateOfBirth { get; set; }
-
+        public Double HireDateLegacy { get; set; }
         
     }
 }

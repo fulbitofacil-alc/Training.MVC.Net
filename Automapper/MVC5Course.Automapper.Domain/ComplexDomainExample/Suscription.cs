@@ -38,27 +38,27 @@ namespace MVC5Course.Automapper.Domain.ComplexDomainExample
 
         public virtual DateTime GetBeginDateForCurrentPeriod(DateTime bookingDate)
         {
-            var begindate = BeginDate;
-            var endDate = BillingDate;
-            for (int i = 1; i < Months; i++)
-            {
-                if (bookingDate >= begindate && bookingDate <= endDate) return begindate;
-                begindate = endDate.AddDays(1);
-                endDate = begindate.GetLastDayOfMonth();
-            }
-            return begindate;
+            //var begindate = BeginDate;
+            //var endDate = BillingDate;
+            //for (int i = 1; i < Months; i++)
+            //{
+            //    if (bookingDate >= begindate && bookingDate <= endDate) return begindate;
+            //    begindate = endDate.AddDays(1);
+            //    endDate = begindate.GetLastDayOfMonth();
+            //}
+            return BeginDate;
         }
         public virtual DateTime GetEndDateForCurrentPeriod(DateTime bookingDate)
         {
-            var begindate = BeginDate;
-            var endDate = BillingDate;
-            for (int i = 1; i < Months; i++)
-            {
-                if (bookingDate >= begindate && bookingDate <= endDate) return endDate;
-                begindate = endDate.AddDays(1);
-                endDate = begindate.GetLastDayOfMonth();
-            }
-            return endDate;
+            //var begindate = BeginDate;
+            //var endDate = BillingDate;
+            //for (int i = 1; i < Months; i++)
+            //{
+            //    if (bookingDate >= begindate && bookingDate <= endDate) return endDate;
+            //    begindate = endDate.AddDays(1);
+            //    endDate = begindate.GetLastDayOfMonth();
+            //}
+            return BeginDate;
 
         }
     }
