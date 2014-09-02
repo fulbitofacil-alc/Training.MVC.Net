@@ -28,7 +28,7 @@ namespace UnitTestProject5
             };
 
             var employeeInfo = AutoMapper.Mapper.Map<Employee, EmployeeServiceViewModel>(employee);
-            var employessInfo = AutoMapper.Mapper.Map<IList<Employee>, IList<EmployeeServiceViewModel>>(listEmployees);
+            //var employessInfo = AutoMapper.Mapper.Map<IList<Employee>, IList<EmployeeServiceViewModel>>(listEmployees);
             Assert.AreEqual(14,employeeInfo.YearsInCompany);
             Assert.AreEqual(new DateTime(1970,1,2).ToLocalTime(),employeeInfo.HireDateLegacy);
         }

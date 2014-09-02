@@ -59,6 +59,7 @@
     <Compile Include="CarSetupClass.cs" />
     <Compile Include="Converters\UnixDateConverter.cs" />
     <Compile Include="EmployeeTest.cs" />
+    <Compile Include="ProfilesTest.cs" />
     <Compile Include="Resolvers\YearOfServiceResolver.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
