@@ -75,7 +75,7 @@ namespace CPS.Persistence.CompositionRoot
                 script.AppendLine(string.Format("INSERT INTO NextHighValues (Entity, NextHigh) VALUES ('{0}',1);", entity.Name));
             }
             var sql = new SimpleAuxiliaryDatabaseObject(script.ToString(), null,
-                new HashedSet<string>
+                new HashedSet<string>()
                 {
                     typeof (MsSql2005Dialect).FullName,
                     typeof (MsSql2008Dialect).FullName,

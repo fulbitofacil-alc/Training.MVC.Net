@@ -40,9 +40,12 @@ namespace CPS.Persistence.ConfORM
                 typeof(Entity).Assembly.GetTypes()
                     .Where(t => typeof(Entity).IsAssignableFrom(t) && !t.IsGenericType)
                     .ToList();
+            orm.TablePerClass(domainEntities);
+
             orm.Cascade<Claim, CPS.Domain.Action>(CascadeOn.None);
             orm.Cascade<Branch, Claim>(CascadeOn.None);
             orm.Cascade<Domain.Action,Document>(CascadeOn.All);
+            
 
             orm.Component<Address>();
             orm.Component<Incident>();
@@ -55,8 +58,9 @@ namespace CPS.Persistence.ConfORM
                 .Merge(new CoolColumnsNamingPack(orm))
                 .Merge(new TablePerClassPack())
                 .Merge(new ListIndexAsPropertyPosColumnNameApplier())
-                .Merge(new PluralizedTablesPack(orm, new EnglishInflector()))
-                .Merge(new MsSQL2008DateTimeApplier());
+                .Merge(new PluralizedTablesPack(orm, new EnglishInflector()));
+
+               // .Merge(new MsSQL2008DateTimeApplier());
 
 
             var mapper = new Mapper(orm, patterns);

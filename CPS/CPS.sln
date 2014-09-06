@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPS.WebAPI.LegacyAdapter", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPS.WebApi", "CPS.WebApi\CPS.WebApi.csproj", "{B858FFE6-E5AF-477D-AE1A-F72B46398AB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPS.Unit.Test", "CPS.Unit.Test\CPS.Unit.Test.csproj", "{B17CDE30-FAE8-4844-A9A2-B550DC451CCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B858FFE6-E5AF-477D-AE1A-F72B46398AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B858FFE6-E5AF-477D-AE1A-F72B46398AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B858FFE6-E5AF-477D-AE1A-F72B46398AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17CDE30-FAE8-4844-A9A2-B550DC451CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17CDE30-FAE8-4844-A9A2-B550DC451CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17CDE30-FAE8-4844-A9A2-B550DC451CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17CDE30-FAE8-4844-A9A2-B550DC451CCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

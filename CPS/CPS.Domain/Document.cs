@@ -2,9 +2,9 @@
 {
     public class Document : Entity
     {
-        public string Description { get; set; }
-        public string FileName { get; set; }
-        public string FileType { get; set; } 
+        public virtual string Description { get; set; }
+        public virtual string FileName { get; set; }
+        public virtual  string FileType { get; set; } 
         public virtual Action Action { get; set; }
     }
 }
