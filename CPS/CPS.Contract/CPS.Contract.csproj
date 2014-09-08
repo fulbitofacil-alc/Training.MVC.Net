@@ -39,11 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionDto.cs" />
+    <Compile Include="AddressDto.cs" />
+    <Compile Include="BaseDto.cs" />
+    <Compile Include="BranchDto.cs" />
+    <Compile Include="ClaimDto.cs" />
+    <Compile Include="ClientDto.cs" />
+    <Compile Include="CompositionRoot\Bootstrapper.cs" />
+    <Compile Include="DocumentDto.cs" />
+    <Compile Include="IncidentDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkflowDto.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CompositionRoot\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
