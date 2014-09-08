@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CPS.Contract
 {
-    class WorkflowDto
+    public class WorkflowDto
     {
         public string Name { get; set; }
         public int Priority { get; set; }
