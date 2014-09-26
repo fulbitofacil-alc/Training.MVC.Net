@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace CPS.Contract
 {
@@ -7,6 +8,7 @@ namespace CPS.Contract
     {
         public DateTime RecordDate { get; set; }
         public DateTime NotifyDate { get; set; }
+        [Required]
         public AddressDto NotifyAddress { get; set; }
         public ClientDto Client { get; set; }
         public IncidentDto Incident { get; set; }

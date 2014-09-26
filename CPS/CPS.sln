@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPS.WebApi", "CPS.WebApi\CP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPS.Unit.Test", "CPS.Unit.Test\CPS.Unit.Test.csproj", "{B17CDE30-FAE8-4844-A9A2-B550DC451CCF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{8277730B-FDF3-4488-9D70-ECAAB708AE20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B17CDE30-FAE8-4844-A9A2-B550DC451CCF} = {8277730B-FDF3-4488-9D70-ECAAB708AE20}
 	EndGlobalSection
 EndGlobal

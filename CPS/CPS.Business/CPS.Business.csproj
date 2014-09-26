@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,10 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaimBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CompositionRoot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CPS.Contract\CPS.Contract.csproj">
+      <Project>{837e8383-e869-49de-b364-0bb6404db176}</Project>
+      <Name>CPS.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CPS.Domain\CPS.Domain.csproj">
+      <Project>{4f4537e8-5f4c-4854-899f-76335596e377}</Project>
+      <Name>CPS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CPS.Persistence\CPS.Persistence.csproj">
+      <Project>{c6c5c9f5-f86a-494e-84d2-ee4e82119ac0}</Project>
+      <Name>CPS.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

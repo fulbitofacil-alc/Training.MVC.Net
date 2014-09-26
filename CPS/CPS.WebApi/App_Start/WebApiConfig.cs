@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using CPS.WebApi.Converters;
+using CPS.WebApi.Handlers;
 
 namespace CPS.WebApi
 {
@@ -19,6 +21,16 @@ namespace CPS.WebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.MessageHandlers
+                .Add(new CultureHandler());
+
+            config.Formatters.JsonFormatter
+                .SerializerSettings
+                    .Converters.Add(new NumberConverter());
+
+            config.Formatters.JsonFormatter
+            .SerializerSettings
+                .Converters.Add(new DateTimeConverter());
         }
     }
 }
