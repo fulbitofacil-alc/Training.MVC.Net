@@ -11,10 +11,7 @@ namespace CPS.WebApi.Models
         public int Id { get; set; }
         public string Description { get; set; }
 
-        public string TypeName
-        {
-            get { return this.GetType().Name; }
-        }
+        public string BindingType { get; set; }
 
         private class IssueConverter : JsonAbstractCreationConverter<IssueDto>
         {
