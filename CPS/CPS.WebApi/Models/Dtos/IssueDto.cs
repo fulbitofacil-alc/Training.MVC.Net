@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace CPS.WebApi.Models
 {
-    [JsonConverter(typeof (IssueConverter))]
+    //[JsonConverter(typeof (IssueConverter))]
     public abstract class IssueDto
     {
         public int Id { get; set; }

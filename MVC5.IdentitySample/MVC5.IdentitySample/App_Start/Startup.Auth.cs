@@ -3,6 +3,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using IdentitySample.Models;
+using Microsoft.Owin.Security.Google;
+using Microsoft.Owin.Security.Twitter;
 using Owin;
 using System;
 
@@ -50,17 +52,22 @@ namespace IdentitySample
             //    clientId: "",
             //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            app.UseTwitterAuthentication(new TwitterAuthenticationOptions()
+            {
+                ConsumerKey = "YNdjx49vfBVikKbbcIZMSwijM",
+                ConsumerSecret = "hqnjCXd8vmhS4lv4IbcgcvZA900q719QO4bKmMceHuNbXtq7xO"
+            });
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
 
-            //app.UseGoogleAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "730266107028771",
+               appSecret: "69569cfce1daf36e6096538d3eb7241a");
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "879567962517-jrifah9knovm46hl1ik9foumgbenioj7.apps.googleusercontent.com",
+                ClientSecret = "M1Uw2XgMU3HKockzE1ylojFJ"
+            });
         }
     }
 }

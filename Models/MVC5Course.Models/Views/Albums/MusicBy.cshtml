@@ -1,10 +1,11 @@
-﻿@model IEnumerable<MVC5Course.Models.Models.MusicByArtist>
+﻿@using MVC5Course.Models.Resources
+@model IEnumerable<MVC5Course.Models.Models.MusicByArtist>
 
 @{
     ViewBag.Title = "MusicBy";
 }
 
-<h2>MusicBy</h2>
+<h2>@MusicResource.resMusicBy</h2>
 
 <table class="table">
     <tr>

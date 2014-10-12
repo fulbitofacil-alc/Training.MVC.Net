@@ -16,7 +16,7 @@ namespace CPS.WebApi.Controllers
 
        public HttpResponseMessage Put(IssueDto issue, int id)
         {
-            
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
         public HttpResponseMessage Post(IssueDto issue)
