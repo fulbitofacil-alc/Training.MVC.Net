@@ -37,7 +37,6 @@ namespace CPS.WebApi.JsonHelpers
                                        JsonSerializer serializer)
         {
             throw new NotImplementedException();
-
         }
     }
 }

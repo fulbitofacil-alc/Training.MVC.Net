@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
+using CPS.WebApi.Mapping;
 
 namespace CPS.WebApi
 {
@@ -12,6 +13,7 @@ namespace CPS.WebApi
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            MappingConfiguration.Mappings();
         }
     }
 }

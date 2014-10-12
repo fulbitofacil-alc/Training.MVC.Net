@@ -15,13 +15,15 @@ namespace CPS.WebApi.Controllers
         // GET: Issues
 
        public HttpResponseMessage Put(IssueDto issue, int id)
-        {
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+       {
+           
+           return new HttpResponseMessage(HttpStatusCode.Accepted);   
         }
 
         public HttpResponseMessage Post(IssueDto issue)
         {
-
+            var issueEntity = AutoMapper.Mapper.Map<IssueDto, Issue>(issue);
+            
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
